@@ -11,10 +11,7 @@ def privkey():
 def getsesskey(m,pubkey):
     return pow(pubkey,m)%p
 def check(s1,s2):
-    if s1==s2:
-        return True
-    else:
-        return False
+    return s1==s2
 a,c,b=privkey(),privkey(),privkey()
 A,C,B=pubkey(a),pubkey(c),pubkey(b)
 s1,s2=getsesskey(a,C),getsesskey(c,A)
