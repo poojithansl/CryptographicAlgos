@@ -5,7 +5,7 @@ def check(m1,m2,k):
     if hash_short(m1,k)==hash_short(m2,k):
         print "True"
         print m2 
-m1="sai lakshmi poojitha nandigam"
+m1="If I go, there's just no telling how far I'll go."
 fp=open('Data/nietzsche.txt','r')
 lines=fp.readlines()
 cnt=0
